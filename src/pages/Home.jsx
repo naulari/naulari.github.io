@@ -1,17 +1,18 @@
+import { ThemeToggle } from "../components/ThemeToggle";
+import { StarBackground } from "../components/StarBackground";
 
 export const Home = () => {
     return (
-        <div className="min-h-screen container">
+        <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+            {/* {Theme Toggle} */}
+            <ThemeToggle />
+            {/* Background Effects */}
+            <StarBackground />
+            {/* NavBar */}
 
-        {/* {Theme Toggle} */}
+            {/* Main Content */}
 
-        {/* Background Effects */}
-
-        {/* NavBar */}
-
-        {/* Main Content */}
-
-        {/* Footer */}
+            {/* Footer */}
         </div>
     );
 };
