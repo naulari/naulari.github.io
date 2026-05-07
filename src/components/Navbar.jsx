@@ -30,7 +30,7 @@ export const Navbar = () => {
             isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
         )}>
 
-            <div className="container flex items-center justify-between">
+            <div className="container flex items-center justify-between relative">
                 <a className="text-xl font-bold text-primary flex items-center"
                     href="#hero">
                     <span className="relative z-10">
@@ -56,9 +56,9 @@ export const Navbar = () => {
                     {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}
                 </button>
 
-                <div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+                <div className={cn("absolute top-full left-0 w-full h-[calc(100vh-100%)] bg-background/95 backdrop-blur-md flex flex-col items-center justify-center",
                     "transition-all duration-300 md:hidden",
-                    isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none" 
+                    isMenuOpen ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none -translate-y-4" 
 
                 )}>
                     <div className="flex flex-col space-y-8 text-xl">
