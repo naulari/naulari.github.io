@@ -56,17 +56,17 @@ export const ProjectSection = () => {
                     {projects.map((project)=>(
                         <article key={project.id} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                             <div className="h-48 overflow-hidden">
-                                <img src={project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                <img src={project.image} alt={project.title} loading="lazy" decoding="async" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                             </div>
 
                             <div className="p-6">
-                                <div className="flex flex-wrap gap-2 mb-4">
+                                <ul className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag)=>(
-                                        <span key={tag} className="px-2 py-1 border text-xs font-medium rounded-full bg-primary/30 text-secondary-foreground">
+                                        <li key={tag} className="px-2 py-1 border text-xs font-medium rounded-full bg-primary/30 text-secondary-foreground">
                                             {tag}
-                                        </span>
+                                        </li>
                                     ))}
-                                </div>
+                                </ul>
                             
 
                                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
@@ -77,6 +77,7 @@ export const ProjectSection = () => {
                                             className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                             target="_blank"
                                             rel="noopener noreferrer"
+                                            title={`Open ${project.title} demo`}
                                             aria-label={`Live demo for ${project.title}`}>
                                             <ExternalLink size={20}/>
                                         </a>

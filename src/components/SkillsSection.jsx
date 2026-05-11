@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { cn } from "../lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
 
 const skills = [
     // Frontend
@@ -41,11 +42,11 @@ export const SkillsSection = () => {
                 </h2>
 
                 <div className="flex flex-wrap justify-center gap-4 mb-12">
-                    {categories.map((category,key) => (
-                        <button key={key} 
+                    {categories.map((category) => (
+                        <button key={category} 
                             onClick={() => setActiveCategory(category)}
                             className={cn(
-                                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                                "px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer",
                                 activeCategory === category ? "bg-primary text-primary-foreground"
                                 : "bg-secondary/70 text-foreground hover:bg-secondary" )}>
                             {category}
@@ -53,25 +54,35 @@ export const SkillsSection = () => {
                     ))}
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {filteredSkills.map((skill,key) =>(
-                        <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
-                            <div className="text-left mb-4">
-                                <h3 className="font-semibold text-lg">{skill.name}</h3>
-                            </div>
-                            <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                                <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" 
-                                    style={{width: skill.level + "%"}}/>
-                            </div>
+                <AnimatePresence mode="wait">
+                    <motion.div key={activeCategory}
+                        initial={{opacity: 0, y:10}}
+                        animate={{opacity:1, y:0}}
+                        exit={{opacity: 0, y:-10}}
+                        transition={{duration: 0.2}}
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {filteredSkills.map((skill, i) =>(
+                            <div key={skill.name} 
+                                className="bg-card p-6 rounded-lg shadow-md card-hover">
+                                <div className="text-left mb-4">
+                                    <h3 className="font-semibold text-lg">{skill.name}</h3>
+                                </div>
+                                <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
+                                    <motion.div 
+                                        className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" 
+                                        initial={{width:0}}
+                                        animate={{width: `${skill.level}%`}}
+                                        transition={{duration:1, ease: "easeOut"}}/>
+                                </div>
 
-                            <div className="text-right mt-1">
-                                <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                                <div className="text-right mt-1">
+                                    <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-
-            </div>
+                        ))}
+                    </motion.div>
+                </AnimatePresence>
+            </div> 
         </section>
     );
 };

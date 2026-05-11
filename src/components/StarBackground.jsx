@@ -46,8 +46,8 @@ export const StarBackground = () => {
             newMeteors.push({
                 id: i,
                 size: Math.random() * 2 + 1,
-                x: Math.random() * 100,
-                y: Math.random() * 20,
+                x: Math.random() * 120 - 10,
+                y: Math.random() * 100,
                 delay: Math.random() * 15,
                 animationDuration: Math.random() * 3 + 3,
             });
