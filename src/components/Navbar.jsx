@@ -35,7 +35,8 @@ export const Navbar = () => {
                     href="#hero">
                     <span className="relative z-10">
                         <span className="text-glow text-foreground"> Juan A. N.</span> Portfolio
-                    </span>
+                    </span> 
+                    <span className="ml-2"> <ThemeToggle/> </span>
                 </a>
 
                 {/* Desktop nav */}
@@ -43,11 +44,10 @@ export const Navbar = () => {
                     {navItems.map((item) => (
                         <a key={item.name} 
                             href={item.href} 
-                            className="flex items-center h-10 text-foreground/80 hover:text-primary transition-colors duration-300">
+                            className="flex items-center font-semibold h-10 text-foreground/80 hover:text-primary transition-colors duration-300">
                             {item.name}
                         </a>
                     ))}
-                    <ThemeToggle/>
                 </div>
                 {/* mobile nav */}
                 <button onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -65,7 +65,7 @@ export const Navbar = () => {
                         {navItems.map((item) => (
                             <a key={item.name} 
                                 href={item.href} 
-                                className="flex items-center h-10 text-foreground/80 hover:text-primary transition-colors duration-300"
+                                className="flex items-center font-semibold h-10 text-foreground/80 hover:text-primary transition-colors duration-300"
                                 onClick={() => setIsMenuOpen(false)}>
                                 {item.name}
                             </a>
