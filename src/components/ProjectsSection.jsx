@@ -1,30 +1,32 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
+import photoshare from "@/assets/projects/SAMSALVA.png";
+import mx_worldwide from "@/assets/projects/Mx-Worldwide.png";
 
 const projects = [
     {
         id: 1,
-        title: "Project 1",
-        description: "Lorem ipsum dolor sit amet.",
+        title: "Balancing Plate",
+        description: "Programmed a balancing plate that uses touchscreen input to reactively control servos for balancing",
         image: "/projects/project1.png",
-        tags: ["React", "TailwindCSS", "Supabase"],
+        tags: ["C", "Linux", "Git"],
         demoURL: "#",
         githubURL: "#"
     },
     {
         id: 2,
-        title: "Project 2",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        image: "/projects/project2.png",
-        tags: ["TypeScript", "D3.js", "Next.js"],
+        title: "Photoshare",
+        description: "Developed a dynamic website enabling users to share and interact with photos",
+        image: photoshare,
+        tags: ["HTML/CSS", "Python", "Javascript"],
         demoURL: "#",
         githubURL: "#"
     },
     {
         id: 3,
-        title: "Project 3",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        image: "/projects/project3.png",
-        tags: ["React", "Node.js", "Stripe"],
+        title: "Mx-Worldwide",
+        description: "Constructed a web application where users choose a song and translate its lyrics to their target language.",
+        image: mx_worldwide,
+        tags: ["Angular", "Python", "MongoDB"],
         demoURL: "#",
         githubURL: "#"
     }
@@ -49,14 +51,14 @@ export const ProjectSection = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center"> Featured <span className="text-primary"> Projects </span> </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto ">
-                    Here are some of my projects. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, possimus.
+                    Here are some of my projects, showcasing my passion for web development and challenging but rewarding field of embedded systems. 
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project)=>(
                         <article key={project.id} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                             <div className="h-48 overflow-hidden">
-                                <img src={project.image} alt={project.title} loading="lazy" decoding="async" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                <img src={project.image} alt={project.title} loading="lazy" decoding="async" className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110" />
                             </div>
 
                             <div className="p-6">

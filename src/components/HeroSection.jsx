@@ -40,14 +40,14 @@ export const HeroSection = () => {
                     <span className="opacity-0 animate-fade-in">Hi, I'm</span> 
                     <span className="text-primary opacity-0 animate-fade-in-delay-1">{" "}Juan</span>
                     <br className="hidden md:max-[964px]:block" />
-                    <span className="text-gradient block md:inline opacity-0 animate-fade-in-delay-2">{" "}Alvarracin Naulaguari</span>
+                    <span className="text-gradient block md:inline opacity-0 animate-fade-in-delay-2">{" "}<span className="text-primary">Alvarracin</span>{" "}Naulaguari</span>
                     </h1>
 
-                    <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-4 md:gap-12">
                         <div>
                             <div className="mb-5 opacity-0 animate-fade-in-delay-2">
                                 <img src={ProfilePic} alt="Profile Picture" 
-                                    className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-4xl object-cover object-bottom inline-block shadow-[0_0_20px_rgba(194,47,89,0.5)] border"/>
+                                    className="w-45 h-45 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-4xl object-cover object-bottom inline-block shadow-[0_0_20px_rgba(194,47,89,0.5)] border"/>
                             </div>
                             <div className="flex flex-wrap justify-center gap-5 opacity-0 animate-fade-in-delay-2">
                                 <a href={resume} 
@@ -88,9 +88,10 @@ export const HeroSection = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className="flex ">
+                        <div className="flex md:inline">
                             <p className="text-justify md:text-left text-base sm:text-lg md:text-xl md:py-16  text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis autem, consequuntur, quia animi quo, enim harum amet sapiente labore eveniet veritatis consectetur? Rem accusamus animi aspernatur ullam culpa? A, error?
+                                Passionate first-gen computer scientist. <br />
+                                Throughout my years at <u className="decoration-dashed">Boston University</u>, I realized how vast the applications to coding are. No matter the area, whether it's real-world embedded systems or web applications, I'm motivated to make a positive impact and empower others.  
                             </p>
                         </div>
                     </div> 

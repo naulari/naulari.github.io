@@ -45,8 +45,8 @@ export const ContactSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, modi. Labore, dolores qui sunt vel officia 
-                    sint quibusdam amet iste voluptatem soluta consectetur asperiores recusandae?
+                    Have a burning questions or want to collaborate? Feel free to reach out! <br />
+                    I'm always open to discussing new opportunities. 
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -61,7 +61,7 @@ export const ContactSection = () => {
                                     </a>
                                 </div>
                                 <div className="pr-12">
-                                    <h4 className="font-medium"> Email</h4>
+                                    <h4 className="font-bold"> Email</h4>
                                     <a href="mailto:jalvarr@outlook.com"
                                         className="text-muted-foreground hover:text-primary transition-colors">
                                         jalvarr@outlook.com
@@ -75,7 +75,7 @@ export const ContactSection = () => {
                                     </a>
                                 </div>
                                 <div className="pr-12">
-                                    <h4 className="font-medium"> Phone</h4>
+                                    <h4 className="font-bold"> Phone</h4>
                                     <a href="tel:+19144268262"
                                         className="text-muted-foreground hover:text-primary transition-colors">
                                         +1 (914) 426-8262
@@ -87,8 +87,8 @@ export const ContactSection = () => {
                                     <MapPin className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="pr-12">
-                                    <h4 className="font-medium"> Location</h4>
-                                    <p  className="text-muted-foreground hover:text-primary transition-colors">
+                                    <h4 className="font-bold"> Location</h4>
+                                    <p  className="text-muted-foreground ">
                                         Los Angeles, CA
                                     </p>
                                 </div>
