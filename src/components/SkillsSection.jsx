@@ -3,29 +3,36 @@ import { cn } from "../lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 const skills = [
-    // Frontend
-    { name: "HTML/CSS", level: 95, category: "frontend" },
-    { name: "JavaScript", level: 90, category: "frontend" },
-    { name: "React", level: 90, category: "frontend" },
-    { name: "TypeScript", level: 85, category: "frontend" },
-    { name: "Tailwind CSS", level: 90, category: "frontend" },
-    { name: "Next.js", level: 80, category: "frontend" },
+    // Programming Skills
+    { name: "Python", level: 95, category: "programming"},
+    { name: "Java", level: 85, category: "programming"},
+    { name: "C", level: 70, category:"programming"},
+    { name: "Swift", level: 65, category: "programming"},
+    { name: "HTML/CSS", level: 95, category: "programming" },
+    { name: "JavaScript / TypeScript", level: 90, category: "programming" },
+    { name: "Tailwind CSS", level: 90, category: "programing" },
 
-    //Backend
-    { name: "Node.js", level: 80, category: "backend" },
-    { name: "Express", level: 75, category: "backend" },
-    { name: "MongoDB", level: 70, category: "backend" },
-    { name: "PostgreSQL", level: 65, category: "backend" },
-    { name: "GraphQL", level: 60, category: "backend" },
+
+    // Frameworks & DB
+    { name: "React", level: 65, category: "frameworks & DBs" },
+    { name: "Angular", level: 75, category: "frameworks & DBs"},
+    { name: "Node.js", level: 75, category: "frameworks & DBs" },
+    { name: "MongoDB", level: 70, category: "frameworks & DBs" },
+    { name: "SQL", level: 70, category: "frameworks & DBs"},
+
 
     // Tools
     { name: "Git/GitHub", level: 90, category: "tools" },
-    { name: "Docker", level: 70, category: "tools" },
-    { name: "Figma", level: 85, category: "tools" },
-    { name: "VS Code", level: 95, category: "tools" }
+    { name: "VS Code", level: 95, category: "tools" },
+    { name: "OS (Windows, MacOS, Linux)", level: 95, category: "tools"},
+    { name: "English", level: 100, category: "tools" },
+    { name: "Spanish", level: 85, category: "tools" },
+    { name: "French", level: 75, category: "tools" },
+
+
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "programming", "frameworks & DBs", "tools"];
 
 export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("all");
@@ -46,7 +53,7 @@ export const SkillsSection = () => {
                         <button key={category} 
                             onClick={() => setActiveCategory(category)}
                             className={cn(
-                                "px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer",
+                                "px-5 py-2 font-semibold text-lg rounded-full transition-colors duration-300 capitalize cursor-pointer",
                                 activeCategory === category ? "bg-primary text-primary-foreground"
                                 : "bg-secondary/70 text-foreground hover:bg-secondary" )}>
                             {category}
@@ -65,7 +72,7 @@ export const SkillsSection = () => {
                             <div key={skill.name} 
                                 className="bg-card p-6 rounded-lg shadow-md card-hover">
                                 <div className="text-left mb-4">
-                                    <h3 className="font-semibold text-lg">{skill.name}</h3>
+                                    <h3 className="font-semibold text-md">{skill.name}</h3>
                                 </div>
                                 <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                                     <motion.div 

@@ -1,5 +1,7 @@
-import { ArrowDown, FileText } from "lucide-react";
+import { ArrowDown, FileText, Mail } from "lucide-react";
 import ProfilePic from "@/assets/PFP.jpeg";
+import resume from "@/assets/Resume.pdf";
+
 
 const LinkedIn = () => (
     <svg role="img" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 16 16">
@@ -42,21 +44,46 @@ export const HeroSection = () => {
                     </h1>
 
                     <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12">
-                        <div className="">
+                        <div>
                             <div className="mb-5 opacity-0 animate-fade-in-delay-2">
-                                <img src={ProfilePic} alt="Profile Picture" className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-4xl object-cover object-bottom inline-block"/>
+                                <img src={ProfilePic} alt="Profile Picture" 
+                                    className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-4xl object-cover object-bottom inline-block shadow-[0_0_20px_rgba(194,47,89,0.5)] border"/>
                             </div>
                             <div className="flex flex-wrap justify-center gap-5 opacity-0 animate-fade-in-delay-2">
-                                <a href="" className="hover:text-primary">
+                                <a href={resume} 
+                                    title="View Resume"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Resume Link"
+                                    className="hover:text-primary">
                                     <FileText className="w-5 h-5 sm:w-6 sm:h-6"/>
                                 </a>
-                                <a href="" className="hover:text-primary">
+                                <a href="mailto:jalvarr@outlook.com"
+                                    className="hover:text-primary">
+                                    <Mail className="w-5 h-5 sm:w-6 sm:h-6"/>
+                                </a>
+                                <a href="https://github.com/naulari"
+                                    title="Open Github Profile"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Github Profile Link"
+                                    className="hover:text-primary">
                                     <GithubIcon/>
                                 </a>
-                                <a href="" className="hover:text-primary">
+                                <a href="https://linkedin.com/in/jalvarr"
+                                    title="Open LinkedIn Profile"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn Profile Link" 
+                                    className="hover:text-primary">
                                     <LinkedIn/>
                                 </a>
-                                <a href="" className="hover:text-primary">
+                                <a href="https://instagram.com/naulari"
+                                    title="Open Instagram Profile"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Instagram Profile Link"
+                                    className="hover:text-primary">
                                     <Instagram/>
                                 </a>
                             </div>
@@ -68,7 +95,7 @@ export const HeroSection = () => {
                         </div>
                     </div> 
 
-                    <div className="mt-5 min-[390px]:mt-10 opacity-0 animate-fade-in-delay-4">
+                    <div className="inline-flex opacity-0 animate-fade-in-delay-4">
                         <a href="#projects" className="cosmic-button">
                             View My Work
                         </a>

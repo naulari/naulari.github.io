@@ -17,7 +17,7 @@ export const AboutSection= () => {
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                             <a href="#contact" className="cosmic-button">Get In Touch</a>
-                            <a href={resume} target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">Resume</a>
+                            <a href={resume} target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 hover:scale-105 active:scale-95 transition-all duration-300">Resume</a>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 gap-6">
@@ -28,7 +28,7 @@ export const AboutSection= () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg"> Web Development</h4>
-                                    <p className="text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto exercitationem quo! Veniam accusamus at fuga labore, quo sint autem doloremque. Repellat id illum deleniti ullam sed et soluta mollitia.</p>
+                                    <p className="text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nulla beatae distinctio voluptate! Ipsum possimus, officiis nostrum rem recusandae labore!</p>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +39,7 @@ export const AboutSection= () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                                    <p className="text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto exercitationem quo! Veniam accusamus at fuga labore, quo sint autem doloremque. Repellat id illum deleniti ullam sed et soluta mollitia.</p>
+                                    <p className="text-muted-foreground">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ipsam sed fugit doloremque! Laboriosam molestiae, dolor natus soluta optio nobis!</p>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ export const AboutSection= () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">Project Management</h4>
-                                    <p className="text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto exercitationem quo! Veniam accusamus at fuga labore, quo sint autem doloremque. Repellat id illum deleniti ullam sed et soluta mollitia.</p>
+                                    <p className="text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium distinctio consectetur amet culpa obcaecati eos commodi eius deleniti incidunt?</p>
                                 </div>
                             </div>
                         </div>
