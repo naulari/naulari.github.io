@@ -1,4 +1,5 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
+import plate from "@/assets/projects/balance_plate.gif"
 import photoshare from "@/assets/projects/SAMSALVA.png";
 import mx_worldwide from "@/assets/projects/Mx-Worldwide.png";
 
@@ -7,7 +8,7 @@ const projects = [
         id: 1,
         title: "Balancing Plate",
         description: "Programmed a balancing plate that uses touchscreen input to reactively control servos for balancing",
-        image: "/projects/project1.png",
+        image: plate,
         tags: ["C", "Linux", "Git"],
         demoURL: "#",
         githubURL: "#"
@@ -19,7 +20,7 @@ const projects = [
         image: photoshare,
         tags: ["HTML/CSS", "Python", "Javascript"],
         demoURL: "#",
-        githubURL: "#"
+        githubURL: "https://github.com/naulari/SAMSALVA"
     },
     {
         id: 3,
@@ -28,7 +29,7 @@ const projects = [
         image: mx_worldwide,
         tags: ["Angular", "Python", "MongoDB"],
         demoURL: "#",
-        githubURL: "#"
+        githubURL: "https://github.com/naulari/Mx-Worldwide"
     }
 ];
 
@@ -58,7 +59,7 @@ export const ProjectSection = () => {
                     {projects.map((project)=>(
                         <article key={project.id} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                             <div className="h-48 overflow-hidden">
-                                <img src={project.image} alt={project.title} loading="lazy" decoding="async" className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110" />
+                                <img src={project.image} alt={project.title} loading="lazy" decoding="async" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                             </div>
 
                             <div className="p-6">
@@ -75,21 +76,25 @@ export const ProjectSection = () => {
                                 <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
                                 <div className="flex justify-between items-center">
                                     <div className="flex space-x-3">
-                                        <a href={project.demoURL} 
-                                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            title={`Open ${project.title} demo`}
-                                            aria-label={`Live demo for ${project.title}`}>
-                                            <ExternalLink size={20}/>
-                                        </a>
-                                        <a href={project.githubURL} 
-                                            className="text-foreground/80 hover:text-primary transition-colors duration-300" 
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            aria-label={`GitHub repository for ${project.title}`}>
-                                            <GithubIcon />
-                                        </a>
+                                        { project.demoURL !== "#" && 
+                                            <a href={project.demoURL} 
+                                                className="text-foreground/80 hover:text-primary active:scale-95 transition-colors duration-300"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                title={`Open ${project.title} demo`}
+                                                aria-label={`Live demo for ${project.title}`}>
+                                                <ExternalLink size={20}/>
+                                            </a>
+                                        }
+                                        { project.githubURL !== "#" &&
+                                            <a href={project.githubURL} 
+                                                className="text-foreground/80 hover:text-primary active:scale-95 transition-colors duration-300" 
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={`GitHub repository for ${project.title}`}>
+                                                <GithubIcon />
+                                            </a>
+                                        }
                                     </div>
                                 </div>
                             </div>

@@ -11,9 +11,9 @@ export const AboutSection= () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
-                        <h3 className="text-2xl font-semibold">Passionate Computer Scientist</h3>
-                        <p className="text-muted-foreground"> With over 4 years of experience in the tech sphere, I've gained a particular interest in web development and helping others understand the facinating world of programming.</p>
-                        <p className="text-muted-foreground">I'm always looking to create elegant and efficient solutions to complex problems, and I'm constantly looking to learn something new in the rapidly evolving landscape</p>
+                        <h3 className="text-2xl font-semibold">Developer Focused on <br />Impactful Solutions</h3>
+                        <p className="text-muted-foreground">My experience ranges from developing full-stack web applications to creating automation tools that improve real-world workflows. I especially enjoy working on projects where technology can simplify processes and improve accessibility for others.</p>
+                        <p className="text-muted-foreground">Beyond development, I enjoy mentoring and teaching programming concepts through collaborative environments. I'm always exploring new technologies and looking for opportunities to continue growing as both a developer and leader.</p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                             <a href="#contact" className="cosmic-button">Get In Touch</a>
@@ -28,7 +28,7 @@ export const AboutSection= () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg"> Web Development</h4>
-                                    <p className="text-muted-foreground">Creating responsive web applications with modern frameworks.</p>
+                                    <p className="text-muted-foreground">Building responsive full-stack applications using modern frameworks.</p>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +39,7 @@ export const AboutSection= () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">Automation & Problem Solver</h4>
-                                    <p className="text-muted-foreground">Leveraging current technologies to improve workflow and unnecessary bottlenecks.</p>
+                                    <p className="text-muted-foreground">Designing automation tools and efficient workflows that reduce repetitive tasks and improve productivity..</p>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ export const AboutSection= () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">Teaching & Leadership</h4>
-                                    <p className="text-muted-foreground">Compassionate leadership by offering a welcoming hand into the world of programming.</p>
+                                    <p className="text-muted-foreground">Supporting students and aspiring developers through mentorship, technical guidance, and collaborative learning.</p>
                                 </div>
                             </div>
                         </div>

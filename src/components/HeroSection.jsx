@@ -55,11 +55,11 @@ export const HeroSection = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Resume Link"
-                                    className="hover:text-primary">
+                                    className="hover:text-primary active:scale-95">
                                     <FileText className="w-5 h-5 sm:w-6 sm:h-6"/>
                                 </a>
                                 <a href="mailto:jalvarr@outlook.com"
-                                    className="hover:text-primary">
+                                    className="hover:text-primary active:scale-95">
                                     <Mail className="w-5 h-5 sm:w-6 sm:h-6"/>
                                 </a>
                                 <a href="https://github.com/naulari"
@@ -67,7 +67,7 @@ export const HeroSection = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Github Profile Link"
-                                    className="hover:text-primary">
+                                    className="hover:text-primary active:scale-95">
                                     <GithubIcon/>
                                 </a>
                                 <a href="https://linkedin.com/in/jalvarr"
@@ -75,7 +75,7 @@ export const HeroSection = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="LinkedIn Profile Link" 
-                                    className="hover:text-primary">
+                                    className="hover:text-primary active:scale-95">
                                     <LinkedIn/>
                                 </a>
                                 <a href="https://instagram.com/naulari"
@@ -83,15 +83,14 @@ export const HeroSection = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Instagram Profile Link"
-                                    className="hover:text-primary">
+                                    className="hover:text-primary active:scale-95">
                                     <Instagram/>
                                 </a>
                             </div>
                         </div>
                         <div className="flex md:inline">
                             <p className="text-justify md:text-left text-base sm:text-lg md:text-xl md:py-16  text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
-                                Passionate first-gen computer scientist. <br />
-                                Throughout my years at <u className="decoration-dashed">Boston University</u>, I realized how vast the applications to coding are. No matter the area, whether it's real-world embedded systems or web applications, I'm motivated to make a positive impact and empower others.  
+                                First-generation developer with experience in full-stack development, automation, and technical instruction. I enjoy building efficient software, simplifying complex problems, and helping others grow through technology. 
                             </p>
                         </div>
                     </div> 

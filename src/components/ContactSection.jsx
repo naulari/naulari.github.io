@@ -55,7 +55,7 @@ export const ContactSection = () => {
 
                         <div className="space-y-6">
                             <div className="grid grid-cols-[auto_1fr] items-start">
-                                <div className="p-3 rounded-full bg-primary/10 hover:scale-[1.1]">
+                                <div className="p-3 rounded-full bg-primary/10 hover:scale-110 active:scale-95">
                                     <a href="mailto:jalvarr@outlook.com">
                                         <Mail className="h-6 w-6 text-primary" />
                                     </a>
@@ -69,7 +69,7 @@ export const ContactSection = () => {
                                 </div>
                             </div>
                             <div className="grid grid-cols-[auto_1fr] items-start">
-                                <div className="p-3 rounded-full bg-primary/10 hover:scale-[1.1]">
+                                <div className="p-3 rounded-full bg-primary/10 hover:scale-110 active:scale-95">
                                     <a href="tel:+19144268262">
                                         <Phone className="h-6 w-6 text-primary" />
                                     </a>
@@ -103,7 +103,7 @@ export const ContactSection = () => {
                                     rel="noopener noreferrer"
                                     aria-hidden="true"
                                     aria-label="Link to my LinkedIn Profile"
-                                    className="hover:text-primary">
+                                    className="hover:text-primary active:scale-95">
                                     <LinkedIn/>
                                 </a>
                                 <a href="https://instagram.com/naulari"
@@ -111,7 +111,7 @@ export const ContactSection = () => {
                                     rel="noopener noreferrer"
                                     aria-hidden="true"
                                     aria-label="Link to my Instagram Profile"
-                                    className="hover:text-primary">
+                                    className="hover:text-primary active:scale-95">
                                     <Instagram/>
                                 </a>
                             </div>
