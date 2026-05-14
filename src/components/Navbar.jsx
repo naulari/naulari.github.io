@@ -4,11 +4,11 @@ import { X, Menu } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
-    {name: "Home", href: "#hero"},
-    {name: "About", href: "#about"},
-    {name: "Skills", href: "#skills"},
-    {name: "Projects", href: "#projects"},
-    {name: "Contact", href: "#contact" },
+    {name: "Home", section: "hero"},
+    {name: "About", section: "about"},
+    {name: "Skills", section: "skills"},
+    {name: "Projects", section: "projects"},
+    {name: "Contact", section: "contact" },
 ]
 
 
@@ -31,22 +31,25 @@ export const Navbar = () => {
         )}>
 
             <div className="container flex items-center justify-between relative">
-                <a className="text-xl font-bold text-primary flex items-center"
-                    href="#hero">
-                    <span className="relative z-10">
-                        <span className="text-glow text-foreground"> Juan A. N.</span> Portfolio
-                    </span> 
-                    <span className="ml-2"> <ThemeToggle/> </span>
-                </a>
+                <div className="flex gap-2">
+                    <button className="text-xl font-bold text-primary flex items-center"
+                        onClick={()=>document.getElementById("hero")?.scrollIntoView({behavior:"smooth"})}>
+                        <span className="relative z-10">
+                            <span className="text-glow text-foreground"> Juan A. N.</span> Portfolio
+                        </span> 
+                    </button>
+                    <ThemeToggle/>
+                </div>
+                
 
                 {/* Desktop nav */}
                 <div className="hidden md:flex space-x-8">
                     {navItems.map((item) => (
-                        <a key={item.name} 
-                            href={item.href} 
+                        <button key={item.name} 
+                            onClick={()=> document.getElementById(item.section)?.scrollIntoView({behavior: "smooth"})}
                             className="flex items-center font-semibold h-10 text-foreground/80 hover:text-primary transition-colors duration-300">
                             {item.name}
-                        </a>
+                        </button>
                     ))}
                 </div>
                 {/* mobile nav */}
@@ -63,12 +66,11 @@ export const Navbar = () => {
                 )}>
                     <div className="flex flex-col space-y-8 text-xl">
                         {navItems.map((item) => (
-                            <a key={item.name} 
-                                href={item.href} 
+                            <button key={item.name}  
                                 className="flex items-center font-semibold h-10 text-foreground/80 hover:text-primary transition-colors duration-300"
-                                onClick={() => setIsMenuOpen(false)}>
+                                onClick={() => (setIsMenuOpen(false), document.getElementById(item.section)?.scrollIntoView({behavior:"smooth"}))}>
                                 {item.name}
-                            </a>
+                            </button>
                         ))}
                     </div>
                 </div>

@@ -16,7 +16,7 @@ export const AboutSection= () => {
                         <p className="text-muted-foreground">Beyond development, I enjoy mentoring and teaching programming concepts through collaborative environments. I'm always exploring new technologies and looking for opportunities to continue growing as both a developer and leader.</p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <a href="#contact" className="cosmic-button">Get In Touch</a>
+                            <button onClick={()=>document.getElementById("contact")?.scrollIntoView({behavior:"smooth"})} className="cosmic-button">Get In Touch</button>
                             <a href={resume} target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 hover:scale-105 active:scale-95 transition-all duration-300">Resume</a>
                         </div>
                     </div>

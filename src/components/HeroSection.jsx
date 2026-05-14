@@ -89,16 +89,16 @@ export const HeroSection = () => {
                             </div>
                         </div>
                         <div className="flex md:inline">
-                            <p className="text-justify md:text-left text-base sm:text-lg md:text-xl md:py-16  text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
+                            <p className="text-center md:text-left text-base sm:text-lg md:text-xl md:py-16  text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
                                 First-generation developer with experience in full-stack development, automation, and technical instruction. I enjoy building efficient software, simplifying complex problems, and helping others grow through technology. 
                             </p>
                         </div>
                     </div> 
 
                     <div className="inline-flex opacity-0 animate-fade-in-delay-4">
-                        <a href="#projects" className="cosmic-button">
+                        <button onClick={()=> document.getElementById("projects")?.scrollIntoView({behavior: "smooth"})} className="cosmic-button">
                             View My Work
-                        </a>
+                        </button>
                     </div>
                     
                 </div>
