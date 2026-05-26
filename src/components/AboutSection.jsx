@@ -1,5 +1,5 @@
 import { Code, Presentation, Workflow } from "lucide-react";
-import resume from "@/assets/Resume.pdf";
+import resume from "@/assets/Juan_A_Resume.pdf";
 
 export const AboutSection= () => {
     return (

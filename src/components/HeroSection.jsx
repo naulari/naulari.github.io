@@ -1,6 +1,6 @@
 import { ArrowDown, FileText, Mail } from "lucide-react";
 import ProfilePic from "@/assets/PFP.jpeg";
-import resume from "@/assets/Resume.pdf";
+import resume from "@/assets/Juan_A_Resume.pdf";
 
 
 const LinkedIn = () => (
