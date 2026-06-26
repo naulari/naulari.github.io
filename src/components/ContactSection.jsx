@@ -27,14 +27,6 @@ export const ContactSection = () => {
 
         setIsSubmitting(true);
 
-        // setTimeout(()=>{
-        //     toast({
-        //         title: "Message Sent!",
-        //         description: "Thank you for your message. I'll get back to you soon."
-        //     });
-        //     setIsSubmitting(false);
-        // }, 1500)
-
         try{
             const formData = new FormData(e.target);
 
