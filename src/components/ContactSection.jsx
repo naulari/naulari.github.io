@@ -30,7 +30,7 @@ export const ContactSection = () => {
         try{
             const formData = new FormData(e.target);
 
-            formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+            formData.append("access_key", "8a7d9d6e-8bb5-44dc-88aa-8a3939b4e15d");
 
             formData.append(
             "subject",
