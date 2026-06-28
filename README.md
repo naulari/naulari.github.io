@@ -1,16 +1,38 @@
-# React + Vite
+# Personal Portfolio 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website!
 
-Currently, two official plugins are available:
+This website serves as a central place to learn more about me, explore the projects I've built, and see the technologies I've worked with throughout my software engineering journey.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Whether you're a recruiter, hiring manager, or fellow developer, I hope this portfolio provides a clear picture of my experience and interests.
 
-## React Compiler
+## Highlights 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design built with React and Tailwind CSS
+- Interactive project cards with live demos and source code
+- Light/Dark mode support
+- Contact form for easy communication
+- Modern animations and clean UI
+- Deployed with GitHub Pages
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript
+- Tailwind CSS
+- React Router
+- Lucide React
+- Web3Forms
+- GitHub Pages
+
+## Live Website
+
+Visit the live portfolio here:
+
+jalvarr.com
+
+## Contact
+
+If you'd like to collaborate or discuss opportunities, feel free to reach out through the contact form on the website or connect with me on LinkedIn.
+
+Thanks for visiting!
