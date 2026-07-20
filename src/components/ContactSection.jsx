@@ -35,7 +35,7 @@ export const ContactSection = () => {
             formData.append(
             "subject",
             "New Portfolio Contact Form Submission"
-        );
+            );
 
             const object = Object.fromEntries(formData);
             const json = JSON.stringify(object);
